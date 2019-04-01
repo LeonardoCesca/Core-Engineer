@@ -4,10 +4,11 @@ public abstract class Main {
 
 	public static void main(String[] args) {
 		
-		Lampada led = new Led();
+		Led led = new Led();
 		
 		Interruptor interruptor = new Interruptor(led);
-		interruptor.trocar();
+		
+		interruptor.verifica();
 		interruptor.trocar();
 
 	}

@@ -8,24 +8,25 @@ import org.junit.Test;
 
 public class TestJUnit {
 
-	@Before
-	public void setUp() throws Exception {
-	}
 
 	@Test
-	public void testeTrocarOff() {
-		Lampada led = new Led();
-		Interruptor interruptorLed = new Interruptor(led);
+	public void CriaLedERetornaOff() {
 		
-		Assert.assertEquals(false, interruptorLed.trocar());
+		Led led = new Led();
+		Interruptor interruptor = new Interruptor(led);
+		assertFalse(interruptor.verifica());
 	}
 	
 	@Test
-	public void testeTrocarOn() {
-		Lampada led = new Led();
-		Interruptor interruptorLed = new Interruptor(led);
+	public void CriaLedERetornaOn() {
 		
-		Assert.assertEquals(true, interruptorLed.trocar());
+		Lampada led = new Led();
+		Interruptor interruptor = new Interruptor(led);
+		
+		interruptor.verifica();
+		interruptor.trocar();
+		
+		Assert.assertTrue(interruptor.verifica());
 	}
 
 }
