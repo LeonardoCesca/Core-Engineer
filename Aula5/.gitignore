@@ -6,3 +6,10 @@ gradle/*
 gradlew.bat
 settings.gradle
 .gradle
+*.jar
+*.war
+*.ear
+/build/
+gradle-app.setting
+
+
