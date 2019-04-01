@@ -9,7 +9,7 @@ public class Interruptor {
 		this.lampada = lampada;
 	}
 
-	void trocar() {
+	public boolean trocar() {
 		
 		if(status == true) {
 			lampada.desliga();
@@ -18,10 +18,7 @@ public class Interruptor {
 			lampada.liga();
 			status = true;
 		}
-	}
-	
-	public boolean verifica () {
+		
 		return status;
 	}
-
 }
