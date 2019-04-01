@@ -1,27 +1,27 @@
 package com.leonardocesca.jtscore.aula5;
 
-public class Tomada {
+public class Interruptor {
 
 	private Lampada lampada;
-	private boolean verifica = false;
+	private boolean status = false;
 
-	public Tomada(Lampada lampada) {
+	public Interruptor(Lampada lampada) {
 		this.lampada = lampada;
 	}
 
 	void trocar() {
 		
-		if(verifica == true) {
+		if(status == true) {
 			lampada.desliga();
-			verifica = false;
+			status = false;
 		} else {
 			lampada.liga();
-			verifica = true;
+			status = true;
 		}
 	}
 	
 	public boolean verifica () {
-		return verifica;
+		return status;
 	}
 
 }
