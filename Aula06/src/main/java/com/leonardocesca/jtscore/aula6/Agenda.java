@@ -25,7 +25,7 @@ public class Agenda {
 				return c.getId();
 			}
 		}
-		System.out.println("Não encontrado");
+		System.out.println("Nï¿½o encontrado");
 		return 0;
 	}
 
@@ -35,7 +35,7 @@ public class Agenda {
 				return c.getNome();
 			}
 		}
-		System.out.println("Não encontrado");
+		System.out.println("Nï¿½o encontrado");
 		return null;
 	}
 
@@ -47,7 +47,7 @@ public class Agenda {
 				return true;
 			}
 		}
-		System.out.println("Contato não encontrado");
+		System.out.println("Contato nï¿½o encontrado");
 		return false;
 	}
 }
